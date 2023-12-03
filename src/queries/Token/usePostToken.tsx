@@ -11,8 +11,8 @@ type DataToken = {
 
 const usersMock: DataToken[] = [
   {
-    email: 'admin@admin',
-    password: 'Admin@1234',
+    email: 'am3@am3',
+    password: 'Am3@12345',
   },
 ];
 

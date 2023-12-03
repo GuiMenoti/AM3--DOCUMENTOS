@@ -19,8 +19,8 @@ import { ThemeOptions } from '@mui/material/styles';
 import { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import * as yup from 'yup';
-import Logo from '../../../public/logo.png';
-import Background from '../../assets/imgs/smag.png';
+import Logo from '../../../public/perfilam3-_1_-removebg-preview.png';
+import Background from '../../assets/imgs/gradient_2.jpg';
 import { usePostToken } from '../../queries/Token/usePostToken';
 import { useAuth } from '../../store/useAuth';
 import { useNavigate } from 'react-router-dom';
@@ -114,8 +114,10 @@ export function Login() {
                     alt="logo"
                     style={{
                       width: '80px',
-                      filter: 'hue-rotate(250deg)',
+                      filter: 'hue-rotate(180deg) brightness(100%%) saturate(120%)',
+                     
                     }}
+                    
                   />
                 </figure>
                 <Typography
@@ -207,7 +209,7 @@ export function Login() {
                     type="submit"
                     fullWidth
                     variant="contained"
-                    color="success"
+                    color="primary"
                     sx={{ margin: '20px 0', color: 'white' }}
                     onClick={handleSubmit(onSubmit)}
                   >
@@ -222,9 +224,7 @@ export function Login() {
                   </Button>
                 </form>
               </Grid>
-              <Typography variant={'caption'} pt={4}>
-                Versão {version}
-              </Typography>
+              
             </Paper>
           </Grid>
         </Grid>
