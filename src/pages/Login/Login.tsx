@@ -152,7 +152,7 @@ export function Login() {
                     <TextField
                       fullWidth
                       size="small"
-                      color="success"
+                      color="primary"
                       variant="outlined"
                       label={'Email'}
                       {...register('email')}
@@ -168,13 +168,13 @@ export function Login() {
                         size="small"
                         htmlFor="outlined-adornment-password"
                         error={errors?.password ? true : false}
-                        color="success"
+                        color="primary"
                       >
                         Password
                       </InputLabel>
                       <OutlinedInput
                         size="small"
-                        color="success"
+                        color="primary"
                         {...register('password')}
                         error={errors?.password ? true : false}
                         id="outlined-adornment-password"
