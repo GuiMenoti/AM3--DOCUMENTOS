@@ -54,7 +54,7 @@ export default function AgricultorConsultar() {
       >
         <Grid>
           <Typography p={'10px 0'} variant={'h5'} color={theme.palette.text.h1}>
-            {current?.name}
+           Departamentos
           </Typography>
           <Breadcrumbs />
         </Grid>
