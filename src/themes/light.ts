@@ -14,7 +14,7 @@ export const lightThemeOptions: ThemeOptions = {
       primaryHover: '#ebf8f2',
       primaryBold: '#005249',
       secondary: '#59DF81',
-      secondaryBold: '#000080',
+      secondaryBold: '#2E7D32',
       danger: '#FF5630',
       orange: '#FAA87F',
     },

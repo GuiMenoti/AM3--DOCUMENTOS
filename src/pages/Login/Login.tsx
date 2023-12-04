@@ -19,8 +19,8 @@ import { ThemeOptions } from '@mui/material/styles';
 import { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import * as yup from 'yup';
-import Logo from '../../../public/perfilam3-_1_-removebg-preview.png';
-import Background from '../../assets/imgs/gradient_2.jpg';
+import Logo from '../../../public/logo.png';
+import Background from '../../assets/imgs/smag.png';
 import { usePostToken } from '../../queries/Token/usePostToken';
 import { useAuth } from '../../store/useAuth';
 import { useNavigate } from 'react-router-dom';
@@ -114,10 +114,8 @@ export function Login() {
                     alt="logo"
                     style={{
                       width: '80px',
-                      filter: 'hue-rotate(180deg) brightness(100%%) saturate(120%)',
-                     
+                      filter: 'hue-rotate(250deg)',
                     }}
-                    
                   />
                 </figure>
                 <Typography
@@ -152,7 +150,7 @@ export function Login() {
                     <TextField
                       fullWidth
                       size="small"
-                      color="primary"
+                      color="success"
                       variant="outlined"
                       label={'Email'}
                       {...register('email')}
@@ -168,13 +166,13 @@ export function Login() {
                         size="small"
                         htmlFor="outlined-adornment-password"
                         error={errors?.password ? true : false}
-                        color="primary"
+                        color="success"
                       >
                         Password
                       </InputLabel>
                       <OutlinedInput
                         size="small"
-                        color="primary"
+                        color="success"
                         {...register('password')}
                         error={errors?.password ? true : false}
                         id="outlined-adornment-password"
@@ -209,7 +207,7 @@ export function Login() {
                     type="submit"
                     fullWidth
                     variant="contained"
-                    color="primary"
+                    color="success"
                     sx={{ margin: '20px 0', color: 'white' }}
                     onClick={handleSubmit(onSubmit)}
                   >
@@ -224,7 +222,9 @@ export function Login() {
                   </Button>
                 </form>
               </Grid>
-              
+              <Typography variant={'caption'} pt={4}>
+                Versão {version}
+              </Typography>
             </Paper>
           </Grid>
         </Grid>
