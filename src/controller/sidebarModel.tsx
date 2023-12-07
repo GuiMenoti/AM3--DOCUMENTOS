@@ -67,7 +67,7 @@ export const sidebarControllerModel: Array<sidebarControllerModelProps> = [
     items: [
       {
         selected: false,
-        name: 'Ajuda',
+        name: '1234',
         path: '/dashboard/ajuda',
         icon: 'ajuda',
         subItems: [],
